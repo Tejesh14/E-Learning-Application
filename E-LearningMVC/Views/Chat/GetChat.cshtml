@@ -1,0 +1,61 @@
+﻿@model IEnumerable<E_Learning.DAL.Models.Chat>
+
+@{
+    ViewData["Title"] = "GetChat";
+}
+
+<h1 class="display-4 mt-3" style="color: #FF9F1C">Chat</h1>
+
+<p>
+    <a asp-action="Create" style="color: #CBF3F0">Create New</a>
+</p>
+<table class="table">
+    <thead style="color: #FF9F1C" class="text-center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SendFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SendTo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SendAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody style="color: #FFFFFF">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendAt)
+            </td>
+            @if (item.SendFrom == ViewBag.Reciever) { 
+        <td>
+            
+        </td>
+                }
+                else
+                {
+                <td>
+                    <form method="post" action="/chat/delete?id=@item.Id">
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+                }
+        </tr>
+}
+    </tbody>
+</table>

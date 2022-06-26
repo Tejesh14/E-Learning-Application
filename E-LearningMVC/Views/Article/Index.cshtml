@@ -1,0 +1,50 @@
+﻿@model IEnumerable<E_Learning.DAL.Models.Resources>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="display-4 m-3" style="color: #FF9F1C">Articles</h1>
+
+<p>
+    @if (ViewBag.Role == "Faculty")
+    {
+        <a asp-action="Create">Create New</a>
+    }
+</p>
+<table class="table">
+    <thead style="color: #FF9F1C" class="text-center">
+        <tr>
+            <th>
+                Topic
+            </th>
+            <th>
+                Link
+            </th>
+            @if (ViewBag.Role == "Faculty")
+            {
+                <th></th>
+            }
+        </tr>
+    </thead>
+    <tbody style="color: #FFFFFF" class="text-center">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </td>
+            <td>
+                <a href="@Html.DisplayFor(modelItem => item.Body)">@Html.DisplayFor(modelItem => item.Body)</a> 
+            </td>
+            @if (ViewBag.Role == "Faculty")
+             {
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) <span>|</span>
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) <span>|</span>
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ });
+                </td>
+             }
+        </tr>
+}
+    </tbody>
+</table>

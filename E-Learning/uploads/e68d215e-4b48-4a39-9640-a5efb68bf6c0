@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "f1276f7b-68b2-4504-b83b-d7f3024bd9f0",
+		"name": "Admin APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Student/Get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Student",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Faculties",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Faculty/Get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Faculty",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Student/Detail/ca430343-545a-43e1-ad82-3b0ca51ebae5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Student",
+						"Detail",
+						"ca430343-545a-43e1-ad82-3b0ca51ebae5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Faculty",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Faculty/Detail/21e4bb79-0fcf-48e1-8672-cbf8eaff79e9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Faculty",
+						"Detail",
+						"21e4bb79-0fcf-48e1-8672-cbf8eaff79e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Student",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSGltYW5zaHUiLCJqdGkiOiI3N2ViNmY0ZS00MDgwLTQxNjEtODNiOS00YTRjMWQzZTQ5YzIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdHVkZW50IiwiZXhwIjoxNjUxNDc2MTkyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQ0MzE3IiwiYXVkIjoiVXNlciJ9.C5gLAD4bQlFN5DtwRtbmCI-3Y8ndM8T5fSpSB-G21Rk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"ca430343-545a-43e1-ad82-3b0ca51ebae5\",\r\n        \"name\": \"Himanshu\",\r\n        \"email\": \"himanshu@gmail.com\",\r\n        \"dateOfBirth\": \"2022-05-11T17:38:00\",\r\n        \"contactNumber\": \"1234567890\",\r\n        \"age\": 11,\r\n        \"fathersName\": \"ykb\",\r\n        \"mothersName\": \"mb\",\r\n        \"address\": \"162/201 Sector 16, Pratap Nagar, Sanganer\",\r\n        \"username\": \"Himanshu\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Student/Edit/ca430343-545a-43e1-ad82-3b0ca51ebae5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Student",
+						"Edit",
+						"ca430343-545a-43e1-ad82-3b0ca51ebae5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Faculty",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sanskar Dutt Sharma\",\r\n    \"email\": \"sanskar@gmail.com\",\r\n    \"dateOfBirth\": \"2022-05-18T17:39:00\",\r\n    \"contactNumber\": \"1234567890\",\r\n    \"age\": 11,\r\n    \"fathersName\": \"ykb\",\r\n    \"mothersName\": \"mb\",\r\n    \"address\": \"162/201 Sector 16, Pratap Nagar, Sanganer\",\r\n    \"username\": \"Sanskar\",\r\n    \"subject\": \"French\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Faculty/Edit/21e4bb79-0fcf-48e1-8672-cbf8eaff79e9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Faculty",
+						"Edit",
+						"21e4bb79-0fcf-48e1-8672-cbf8eaff79e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ayush\",\r\n        \"email\": \"ayush@gmail.com\",\r\n        \"dateOfBirth\": \"2022-05-11T17:38:00\",\r\n        \"contactNumber\": \"1234567890\",\r\n        \"age\": 11,\r\n        \"fathersName\": \"ykb\",\r\n        \"mothersName\": \"mb\",\r\n        \"address\": \"162/201 Sector 16, Pratap Nagar, Sanganer\",\r\n        \"username\": \"Ayush\"\r\n    }"
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Student/AddStudent",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Student",
+						"AddStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Faculty",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Ayush\",\r\n        \"email\": \"ayush@gmail.com\",\r\n        \"dateOfBirth\": \"2022-05-11T17:38:00\",\r\n        \"contactNumber\": \"1234567890\",\r\n        \"age\": 11,\r\n        \"fathersName\": \"ykb\",\r\n        \"mothersName\": \"mb\",\r\n        \"address\": \"162/201 Sector 16, Pratap Nagar, Sanganer\",\r\n        \"username\": \"Ayush\",\r\n        \"subject\" : \"English\"\r\n    }"
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Faculty/AddFaculty",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Faculty",
+						"AddFaculty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Student/Delete/668dbaa6-643b-4d9f-b927-1268891cb383",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Student",
+						"Delete",
+						"668dbaa6-643b-4d9f-b927-1268891cb383"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Faculty",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Faculty/Delete/0bdd80ba-e612-4e2d-a0cd-f5fdda2f8070",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Faculty",
+						"Delete",
+						"0bdd80ba-e612-4e2d-a0cd-f5fdda2f8070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Projects",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44317/api/Project/GetAllProjects",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Project",
+						"GetAllProjects"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVqZXNoIiwianRpIjoiYjdmOTJmMGEtNjExOS00OWYwLTg0NzUtM2YzOWQ0YmZiMzMwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2NTE0NzU5MDMsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDQzMTciLCJhdWQiOiJVc2VyIn0.FVMTyH0xUbKKo-Wj8xfXMxheDJwW83QmTpxeyg_ZozY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

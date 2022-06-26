@@ -1,0 +1,78 @@
+﻿@model IEnumerable<E_Learning.DAL.Models.Project>
+
+@{
+    ViewData["Title"] = "Project";
+}
+
+<h1 class="display-4 mt-3" style="color: #FF9F1C">All Projects</h1>
+
+<div>
+    @if(ViewBag.Role == "Faculty")
+     {
+        <a asp-action="Create">Create New</a>
+     }
+    <div>
+        <form method="get" action="Projects">
+            <label style="color: #FFFFFF"><b>Search</b></label><br />
+            <input type="text" placeholder="Search" name="search" /><br /><br />
+            <label style="color: #FFFFFF"><b>Filter</b></label><br />
+            <input type="radio" name="projectData" value="All" checked/><span style="color: #FFFFFF"> All Projects </span>
+            <input type="radio" name="projectData" value="Pending" /><span style="color: #FFFFFF"> Pending Projects </span>
+            <br />
+            <button type="submit" class="btn-sm btn" style="background-color: #FF9F1C">Submit</button>
+        </form>
+    </div>
+</div>
+<table class="table mt-3">
+    <thead style="color: #FF9F1C" class="text-center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectName)
+            </th>
+            <th>
+                Download Assignment
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssignBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssignedAt)
+            </th>
+            <th>
+                Submitted Assignment
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody style="color: #FFFFFF" class="text-center">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectName)
+            </td>
+            <td>
+                <a href="https://localhost:44317/api/Project/DownloadAssignment?id=@item.Id" target="_blank">Download</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssignBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssignedAt)
+            </td>
+            <td>
+                <a href="https://localhost:44317/api/Project/DownloadSubmition?id=@item.Id" target="_blank">Download</a>
+            </td>
+            <td>
+                @if (item.FileNameSubmitted == null)
+                {
+                    <a href ="/project/SubmitAssignment/@item.Id">Submit</a>
+                }
+                else
+                {
+                    <span>Submitted</span>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

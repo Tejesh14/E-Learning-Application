@@ -1,0 +1,15 @@
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\E-Learning.DAL.deps.json
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\E-Learning.DAL.runtimeconfig.json
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\E-Learning.DAL.runtimeconfig.dev.json
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\E-Learning.DAL.dll
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\ref\E-Learning.DAL.dll
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\bin\Debug\net5.0\E-Learning.DAL.pdb
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.AssemblyInfoInputs.cache
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.AssemblyInfo.cs
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.csproj.CoreCompileInputs.cache
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.dll
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\ref\E-Learning.DAL.dll
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.pdb
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.genruntimeconfig.cache
+C:\Users\tejesh.bharadwaj\Desktop\New folder\E-Learning\E-Learning.DAL\obj\Debug\net5.0\E-Learning.DAL.csproj.AssemblyReference.cache
